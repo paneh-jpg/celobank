@@ -89,13 +89,558 @@
     <!-- Embed Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Open Sans  -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Inter  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
 
     <!-- Style CSS  -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header  -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <!-- Logo  -->
+          <img
+            src="./assets/img/celobank-logo.svg"
+            alt="Celo Bank Logo"
+            class="header__logo"
+          />
+
+          <!-- Navigation Bar  -->
+          <nav class="navbar">
+            <ul class="navbar__list">
+              <li>
+                <a href="#!" class="navbar__item navbar__item-active">Home</a>
+              </li>
+              <li>
+                <a href="#!" class="navbar__item">Products</a>
+              </li>
+              <li>
+                <a href="#!" class="navbar__item">Features</a>
+              </li>
+              <li>
+                <a href="#!" class="navbar__item">Blog</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Action  -->
+          <div class="header__action">
+            <a href="" class="header-action__link">Log in</a>
+            <a href="" class="header-action__btn btn">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main style="height: 5000px">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <!-- Hero Content  -->
+            <section class="hero__content">
+              <p class="section-tagline hero__tagline" data-aos="fade-up">
+                Digital Smart Wallet
+              </p>
+              <h1 class="hero__heading">
+                Digital <span class="hero__heading-highlight">Payment</span> For
+                Everyone.
+              </h1>
+              <p class="hero__desc section-desc">
+                We bring together everything that’s required to build websites
+                and apps that accept payments and send payouts globally. We are
+                the best platform.
+              </p>
+
+              <form action="" class="hero__form">
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  class="hero__form-input"
+                  placeholder="Your email address"
+                />
+                <button type="submit" class="hero-form-btn btn">
+                  Get Started
+                </button>
+              </form>
+              <p class="hero__note">
+                *We’ll respect the inbox and never share your email.
+              </p>
+            </section>
+
+            <!-- Hero Media  -->
+            <div class="hero__media">
+              <div class="hero__phone">
+                <!-- Main Balance Card  -->
+                <div class="phone-card">
+                  <div class="card__top">
+                    <p class="card__name">Main Balance</p>
+                    <img
+                      src="./assets/img/card-logo.svg"
+                      alt="Card Logo"
+                      class="card__logo"
+                    />
+                  </div>
+                  <p class="card__amount">$78,355.17</p>
+                  <div class="card__info">
+                    <p class="card__title">VALID THUR</p>
+                    <p class="card__title">CARD HOLDER</p>
+                  </div>
+                  <div class="card__value">
+                    <p class="card__date">08/22</p>
+                    <p class="card__username">Md Moshqur Alam</p>
+                  </div>
+                  <img
+                    src="./assets/img/card-decor1.svg"
+                    alt="Card Decoration"
+                    class="card__decor card__decor1"
+                  />
+                  <img
+                    src="./assets/img/card-decor2.svg"
+                    alt="Card Decoration"
+                    class="card__decor card__decor2"
+                  />
+                </div>
+
+                <!-- Transactions  -->
+                <div class="card__transaction">
+                  <div class="card__transaction-top">
+                    <h3 class="card__transaction-title">Transactions</h3>
+                    <img
+                      src="./assets/icon/transaction-icon.svg"
+                      alt="icon"
+                      class="transaction-icon"
+                    />
+                  </div>
+
+                  <ul class="card__transaction-list">
+                    <!-- Transaction Item 1 -->
+                    <li class="card__transaction-item">
+                      <!-- Transaction Icon  -->
+                      <div class="card__transaction-icon">
+                        <img
+                          src="./assets/icon/income.svg"
+                          alt="Icon"
+                          class="icon__img"
+                        />
+                      </div>
+                      <!-- Transaction Info  -->
+                      <div class="card__transaction-info">
+                        <p class="card__transaction-title">Received Money</p>
+                        <p class="card__transaction-sub">email@gmail.com</p>
+                      </div>
+                      <!-- Transaction value  -->
+                      <div class="card__transaction-value">
+                        <p class="card__title-value">+$1,600</p>
+                        <p class="card__transaction-date">Sep 23</p>
+                      </div>
+                    </li>
+
+                    <!-- Transaction Item 2 -->
+                    <li class="card__transaction-item">
+                      <!-- Transaction Icon  -->
+                      <div class="card__transaction-icon">
+                        <img
+                          src="./assets/icon/paper-plane.svg"
+                          alt="Icon"
+                          class="icon__img"
+                        />
+                      </div>
+                      <!-- Transaction Info  -->
+                      <div class="card__transaction-info">
+                        <p class="card__transaction-title">Send Money</p>
+                        <p class="card__transaction-sub">Airbnb Payment</p>
+                      </div>
+                      <!-- Transaction value  -->
+                      <div class="card__transaction-value">
+                        <p class="card__title-value">- $600</p>
+                        <p class="card__transaction-date">Sep 23</p>
+                      </div>
+                    </li>
+
+                    <!-- Transaction Item 3 -->
+                    <li class="card__transaction-item">
+                      <!-- Transaction Icon  -->
+                      <div class="card__transaction-icon">
+                        <img
+                          src="./assets/icon/income2.svg"
+                          alt="Icon"
+                          class="icon__img"
+                        />
+                      </div>
+                      <!-- Transaction Info  -->
+                      <div class="card__transaction-info">
+                        <p class="card__transaction-title">Received Money</p>
+                        <p class="card__transaction-sub">Upwork Earning</p>
+                      </div>
+                      <!-- Transaction value  -->
+                      <div class="card__transaction-value">
+                        <p class="card__title-value">+$1,600</p>
+                        <p class="card__transaction-date">Sep 23</p>
+                      </div>
+                    </li>
+
+                    <!-- Transaction Item 4 -->
+                    <li class="card__transaction-item">
+                      <!-- Transaction Icon  -->
+                      <div class="card__transaction-icon">
+                        <img
+                          src="./assets/icon/wallet.svg"
+                          alt="Icon"
+                          class="icon__img"
+                        />
+                      </div>
+                      <!-- Transaction Info  -->
+                      <div class="card__transaction-info">
+                        <p class="card__transaction-title">Pay Bill</p>
+                        <p class="card__transaction-sub">Electricity Bill</p>
+                      </div>
+                      <!-- Transaction value  -->
+                      <div class="card__transaction-value">
+                        <p class="card__title-value">- $600</p>
+                        <p class="card__transaction-date">Sep 23</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Interest  -->
+                <div class="phone__badge phone__badge--interest floating">
+                  <p class="interest-label">0%</p>
+                  <p class="interest-value">Interest</p>
+                </div>
+
+                <!-- Deposit  -->
+                <div class="phone__badge phone__badge--deposite floating">
+                  <img
+                    src="./assets/icon/deposite.svg"
+                    alt=""
+                    class="deposite-icon"
+                  />
+                  <p class="deposite-label">Deposite</p>
+                  <p class="deposite-value">$32000</p>
+                </div>
+
+                <!-- Secured  -->
+                <div class="phone__badge phone__badge--secured floating">
+                  <img
+                    src="./assets/icon/secured.svg"
+                    alt=""
+                    class="secured-icon"
+                  />
+                  <div class="secured-info">
+                    <p class="secured-label">$1.310</p>
+                    <p class="secured-value">SECURED FUNDS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it work -->
+      <section class="how-it-works">
+        <div class="container">
+          <div class="how-it-works__inner">
+            <!-- How it work Media  -->
+            <div class="how-it-works__media">
+              <svg
+                class="how-it-works__bg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="470"
+                height="546"
+                viewBox="0 0 470 546"
+                fill="none"
+              >
+                <path
+                  d="M30 546H440C456.569 546 470 532.569 470 516V88.3968C470 75.5937 461.875 64.2015 449.77 60.0321L282.951 2.57549C271.409 -1.39988 258.593 2.26418 247.853 8.06671C202.721 32.4499 100.198 39.0854 30.8169 39.3354C13.9297 39.3963 0 52.9379 0 69.8252V516C0 532.569 13.4315 546 30 546Z"
+                  fill="#92C2C2"
+                />
+              </svg>
+              <img
+                class="how-it-works__img"
+                src="./assets/img/how-it-works.png"
+                alt="How It Works"
+              />
+
+              <div class="how-it-work__icon floating">
+                <img src="./assets/icon/logo-icon.svg" alt="Logo Icon" />
+              </div>
+              <div class="how-it-work_notification floating">
+                <img
+                  src="./assets/icon/noti-icon.svg"
+                  alt=""
+                  class="notification-icon"
+                />
+                <div class="notification__info">
+                  <p class="notification-title">Congratulations</p>
+                  <p class="notification-desc">Your account activated</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- How it work Content  -->
+            <div class="how-it-works__content">
+              <p
+                class="section-tagline how-it-works__tagline"
+                data-aos="fade-left"
+              >
+                Digital Smart Wallet
+              </p>
+              <h2
+                class="section-heading how-it-works__heading"
+                data-aos="fade-left"
+              >
+                How It Works
+              </h2>
+              <!-- How it work Steps  -->
+              <ol class="how-it-work__steps">
+                <!-- Step 1  -->
+                <li class="how-it-work__step" data-aos="fade-up-left">
+                  <h3>
+                    <a class="how-it-works__step-title" href="#!"
+                      >1. Open a High Interest Checking account</a
+                    >
+                  </h3>
+                  <p class="how-it-works__step-desc">
+                    Fund your bank account with a minimum balance of $100.
+                    Enroll in 3 minutes or less!
+                  </p>
+                </li>
+                <!-- Step 2  -->
+                <li class="how-it-work__step" data-aos="fade-up-left">
+                  <h3>
+                    <a href="#!" class="how-it-works__step-title">
+                      2. 10 point-of-sale transactions each Month that are at
+                      least $10 each.
+                    </a>
+                  </h3>
+                  <p class="how-it-works__step-desc">
+                    Be sure to use your rewards checking account as often as
+                    possible in order to accue APYI
+                  </p>
+                </li>
+                <!-- Step 3 -->
+                <li class="how-it-work__step" data-aos="fade-up-left">
+                  <h3>
+                    <a class="how-it-works__step-title" href="#!"
+                      >3. Receive up to 5.50% APY</a
+                    >
+                  </h3>
+                  <p class="how-it-works__step-desc">
+                    The APY you earn will be based on your account balance and
+                    satisfying the transaction requirement.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us  -->
+      <section class="about">
+        <div class="container">
+          <div class="about__inner">
+            <!-- Cell 1 Content  -->
+            <section class="about__content">
+              <p class="section-tagline">Digital Smart Wallet</p>
+              <h2 class="section-heading about__heading">
+                One Card For All Your Payments
+              </h2>
+              <p class="about__desc section-desc">
+                We bring together eveything that’s required to build websites
+                and apps that accept payments and send payouts globally. We are
+                the best platform.
+              </p>
+              <ul class="about__feature">
+                <li class="feature-item">Global Payments</li>
+                <li class="feature-item">One-Click Purchase</li>
+                <li class="feature-item">Friendly Price</li>
+              </ul>
+              <a href="#!" class="about__cta btn">Get Started</a>
+            </section>
+            <!-- Cell 2 Media  -->
+            <div class="about__media">
+              <!-- Send Money -->
+              <div class="about__badge--send">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="80"
+                  height="76"
+                  viewBox="0 0 80 76"
+                  fill="none"
+                >
+                  <g opacity="0.1" filter="url(#filter0_dd_2_271)">
+                    <rect
+                      x="20"
+                      y="18"
+                      width="40"
+                      height="40"
+                      rx="8"
+                      fill="#DA6464"
+                    />
+                  </g>
+                  <path
+                    d="M37.2914 42.6757V46.5404C37.2914 46.8104 37.4647 47.0495 37.7214 47.1345C37.7855 47.1553 37.8513 47.1653 37.9163 47.1653C38.1113 47.1653 38.2996 47.0737 38.4196 46.9104L40.6803 43.8339L37.2914 42.6757Z"
+                    fill="#DA6464"
+                  />
+                  <path
+                    d="M49.7361 28.1159C49.5445 27.9801 49.2928 27.9617 49.0845 28.0709L30.3358 37.8619C30.1142 37.9777 29.9834 38.2143 30.0017 38.4635C30.0209 38.7135 30.1867 38.9268 30.4225 39.0076L35.6346 40.7892L46.7347 31.2982L38.1453 41.6466L46.8805 44.6322C46.9455 44.6539 47.0138 44.6655 47.0821 44.6655C47.1955 44.6655 47.308 44.6347 47.4071 44.5747C47.5654 44.4781 47.6729 44.3156 47.7004 44.1331L49.9919 28.7175C50.0261 28.4842 49.9278 28.2526 49.7361 28.1159Z"
+                    fill="#DA6464"
+                  />
+                  <defs>
+                    <filter
+                      id="filter0_dd_2_271"
+                      x="0"
+                      y="0"
+                      width="80"
+                      height="76"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="4" dy="2" />
+                      <feGaussianBlur stdDeviation="8" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.534167 0 0 0 0 0.645967 0 0 0 0 0.749167 0 0 0 0.48 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_2_271"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="-4" dy="-2" />
+                      <feGaussianBlur stdDeviation="8" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="effect1_dropShadow_2_271"
+                        result="effect2_dropShadow_2_271"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect2_dropShadow_2_271"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+                <div class="send__info">
+                  <p class="send__info-title">Send Money</p>
+                  <p class="send__info-payment">Airbnb Payment</p>
+                </div>
+                <div class="send__info2">
+                  <p class="send-amount">- $600</p>
+                  <p class="send-date">Sep 23</p>
+                </div>
+              </div>
+              <div class="phone-card about__media-card">
+                <div class="card__top about__media-card__top">
+                  <p class="card__name about__media-card__name">Main Balance</p>
+                  <img
+                    src="./assets/img/about-card-logo.svg"
+                    alt="Card Logo"
+                    class="card__logo about__media-card__logo"
+                  />
+                </div>
+                <p class="card__amount about__media-card__amount">$78,355.17</p>
+                <div class="card__info about__media-card__info">
+                  <p class="card__title about__media-card__title">VALID THUR</p>
+                  <p class="card__username about__media-card__username">
+                    Md Moshqur Alam
+                  </p>
+                </div>
+                <div class="card__value about__media-card__value">
+                  <p class="card__date about__media-card__date">08/22</p>
+                  <p class="card__title about__media-card__title">
+                    CARD HOLDER
+                  </p>
+                </div>
+                <img
+                  src="./assets/img/about-card-decor1.svg"
+                  alt="Card Decoration"
+                  class="card__decor card__decor1 about__media-card__decor about__media-card__decor1"
+                />
+                <img
+                  src="./assets/img/about-card-decor2.svg"
+                  alt="Card Decoration"
+                  class="card__decor card__decor2 about__media-card__decor about__media-card__decor2"
+                />
+              </div>
+
+              <!-- Income Money  -->
+              <div class="about__badge--income">
+                <svg
+                  class="income__logo"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                >
+                  <rect width="30" height="30" rx="8" fill="white" />
+                  <path
+                    d="M16.5366 15.1636C18.5116 15.1636 20.1182 13.5568 20.1182 11.5818C20.1182 9.60681 18.5116 8 16.5366 8C14.5616 8 12.9548 9.60681 12.9548 11.5818C12.9548 13.5568 14.5616 15.1636 16.5366 15.1636ZM16.1125 9.47644V9.37916C16.1125 9.14473 16.3022 8.95498 16.5366 8.95498C16.7708 8.95498 16.9608 9.14473 16.9608 9.37916V9.47701C17.4656 9.58532 17.8454 10.035 17.8454 10.5717C17.8454 10.8058 17.6554 10.9959 17.4212 10.9959C17.1868 10.9959 16.997 10.8058 16.997 10.5717C16.997 10.4221 16.8751 10.3002 16.7255 10.3002H16.3452C16.1956 10.3002 16.0737 10.4221 16.0737 10.5717C16.0737 10.6574 16.1147 10.7388 16.1837 10.7897L16.5366 11.051L17.3941 11.6856C17.6757 11.894 17.8454 12.2274 17.8477 12.5781V12.582C17.8496 12.8812 17.7351 13.1635 17.5247 13.3764C17.3686 13.5345 17.1735 13.6405 16.9608 13.6852V13.7845C16.9608 14.0189 16.7708 14.2086 16.5366 14.2086C16.3022 14.2086 16.1125 14.0189 16.1125 13.7845V13.6866C15.9055 13.6425 15.7151 13.5407 15.5613 13.3886C15.3484 13.1784 15.2302 12.8979 15.2285 12.5987C15.227 12.3646 15.4157 12.1734 15.6498 12.172H15.6526C15.8857 12.172 16.0754 12.3603 16.0768 12.5936C16.0774 12.74 16.1952 12.8634 16.3497 12.8634C16.5841 12.862 16.4968 12.8625 16.7295 12.8612C16.8801 12.86 17.0004 12.7378 16.9993 12.5877V12.5837C16.9987 12.4989 16.9577 12.418 16.8893 12.3674L16.5366 12.1064L15.6789 11.4718C15.395 11.2614 15.2254 10.9249 15.2254 10.5717C15.2254 10.0338 15.6063 9.5839 16.1125 9.47644Z"
+                    fill="#439F90"
+                  />
+                  <path
+                    d="M10.7329 17.2017C10.6241 17.0132 10.3826 16.9476 10.1929 17.057L8.19764 18.2088C8.0087 18.3182 7.94389 18.5598 8.05296 18.749L10.0923 22.2811C10.2014 22.47 10.4429 22.5349 10.6322 22.4258L12.6275 21.2737C12.8167 21.1646 12.8813 20.923 12.7722 20.7338L10.7329 17.2017Z"
+                    fill="#439F90"
+                  />
+                  <path
+                    d="M22.1661 16.4967C21.9741 16.23 21.6025 16.1698 21.3361 16.3618C20.5279 16.944 18.976 18.0622 18.8527 18.1513C18.7958 18.1996 18.7362 18.2435 18.674 18.2822C18.4299 18.4357 18.1468 18.5178 17.8513 18.5178H15.8195C15.5853 18.5178 15.3953 18.328 15.3953 18.0936C15.3953 17.8589 15.5856 17.6694 15.8195 17.6694H17.9924C18.3117 17.6694 18.5674 17.4036 18.5541 17.0837C18.5416 16.7803 18.2826 16.545 17.9789 16.545H16.3248C16.2128 16.4265 16.0901 16.3179 15.9586 16.2209C15.5064 15.8875 14.9476 15.6904 14.3428 15.6904C13.2673 15.6904 12.1972 16.368 11.7535 17.2724L13.4887 20.2776H16.7436C17.3827 20.2776 18.0122 20.1141 18.5662 19.7954C18.7582 19.6851 18.9638 19.5525 19.1867 19.3924C20.1204 18.7216 22.0295 17.3281 22.031 17.3272C22.2979 17.1355 22.3584 16.7633 22.1661 16.4967Z"
+                    fill="#439F90"
+                  />
+                </svg>
+                <p class="income-title">Income</p>
+                <p class="income-amount">$1250</p>
+              </div>
+            </div>
+            <!-- Cell 3 Media  -->
+            <div class="about__media">3</div>
+            <!-- Cell 4 Content  -->
+            <section class="about__content">4</section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Java Script  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

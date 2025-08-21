@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -84,8 +89,17 @@ a {
 }
 
 /* Header */
+.header.fixed {
+  padding-top: 28px;
+  padding-bottom: 6px;
+  position: sticky;
+  top: -22px;
+  z-index: 999;
+  background-color: #fff;
+}
+
 .header {
-  margin-top: 42px;
+  margin-top: 14px;
 }
 
 .header__inner {
@@ -143,6 +157,14 @@ a {
 .hero {
   margin-top: 36px;
   padding: 38px 0;
+}
+
+.space-height {
+  scroll-margin-top: 80px;
+}
+
+.space-height2 {
+  scroll-margin-top: 100px;
 }
 
 .hero__inner {
